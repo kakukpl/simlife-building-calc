@@ -64,6 +64,10 @@ _MARKET_DEFAULTS: dict[str, tuple[str, int, float, float]] = {
     "concrete": ("🧱 Concrete (m³)", 33,  22_097.39,    669.61),
 }
 
+# ============================================================
+# ACHIEVEMENT DEFINITIONS
+# ============================================================
+
 ACHIEVEMENT_DEFINITIONS = [
     (
         "🥇 First Million",
@@ -122,8 +126,7 @@ ACHIEVEMENT_DEFINITIONS = [
         lambda s: s.get("overrides_used", 0) >= 1,
         "Manually override a building cost at least once",
     ),
-)
-
+]
 # ============================================================
 # SECTION 2: PANDAS COMPATIBILITY SHIM
 # ============================================================
